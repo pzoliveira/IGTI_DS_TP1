@@ -73,8 +73,8 @@ summary(anova)
 boxplot(dados$Preco ~ dados$Portas)
 
 #Test t de Student
-t.test(dados$Preco ~ dados$Portas , 
-       paired = FALSE, #amostras nao pareadas
+t.test(dados$Preco ~ dados$Portas, 
+       #paired = FALSE, #amostras nao pareadas
        alternative = 'two.sided', #bilateral
        conf.level = 0.95 #95% de confianca
 )
